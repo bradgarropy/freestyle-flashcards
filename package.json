@@ -1,7 +1,7 @@
 {
-    "name": "next-starter",
-    "version": "2.1.0",
-    "description": "⏭ next.js starter",
+    "name": "freestyle-flashcards",
+    "version": "0.0.1",
+    "description": "🎤 freestyle flashcards",
     "keywords": [
         "typescript",
         "react",
@@ -10,11 +10,16 @@
         "styled-components",
         "jest",
         "vercel",
-        "nextjs"
+        "nextjs",
+        "harry-mack",
+        "freestyle",
+        "rap",
+        "freestyle-rap",
+        "flashcards"
     ],
-    "homepage": "https://next-starter.bradgarropy.vercel.app",
+    "homepage": "https://freestyle-flashcards.vercel.app",
     "bugs": {
-        "url": "https://github.com/bradgarropy/next-starter/issues"
+        "url": "https://github.com/bradgarropy/freestyle-flashcards/issues"
     },
     "license": "MIT",
     "author": {
@@ -24,7 +29,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/bradgarropy/next-starter"
+        "url": "https://github.com/bradgarropy/freestyle-flashcards"
     },
     "scripts": {
         "start": "next",
