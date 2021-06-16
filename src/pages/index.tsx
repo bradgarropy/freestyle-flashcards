@@ -10,21 +10,16 @@ import {FC, useEffect, useState} from "react"
 import {UnsplashImage} from "./api/unsplash"
 
 const IndexPage: FC = () => {
+    const [word, setWord] = useState<string>()
     const [image, setImage] = useState<UnsplashImage>()
-    const [word, setWord] = useState<string>(randomWords())
 
     useEffect(() => {
-        const execute = async () => {
-            const image = await getImage(word)
-            setImage(image)
-        }
-
-        execute()
-    }, [word])
+        onNext()
+    }, [])
 
     const onNext = async () => {
         const newWord = randomWords()
-        const newImage = await getImage(word)
+        const newImage = await getImage(newWord)
 
         setImage(newImage)
         setWord(newWord)

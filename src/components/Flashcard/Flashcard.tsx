@@ -34,33 +34,27 @@ const Flashcard: FC<FlashcardProps> = ({image, word, onNext}) => {
                 <div className={styles.placeholder} />
             )}
 
-            {image ? (
-                <p>
-                    Photo by{" "}
-                    <a
-                        href={`${image.profile}?${unsplashUTM}`}
-                        className={styles.link}
-                    >
-                        {image.user}
-                    </a>{" "}
-                    on{" "}
-                    <a
-                        href={`https://unsplash.com?${unsplashUTM}`}
-                        className={styles.link}
-                    >
-                        Unsplash
-                    </a>
-                    .
-                </p>
-            ) : (
-                <p></p>
-            )}
+            <p style={{visibility: image ? "visible" : "hidden"}}>
+                Photo by{" "}
+                <a
+                    href={`${image?.profile}?${unsplashUTM}`}
+                    className={styles.link}
+                >
+                    {image?.user}
+                </a>{" "}
+                on{" "}
+                <a
+                    href={`https://unsplash.com?${unsplashUTM}`}
+                    className={styles.link}
+                >
+                    Unsplash
+                </a>
+                .
+            </p>
 
             <p className={styles.word}>{word}</p>
 
-            <button className={styles.next} onClick={onNext}>
-                tap for another word
-            </button>
+            <button className={styles.next}>tap for another word</button>
         </div>
     )
 }
