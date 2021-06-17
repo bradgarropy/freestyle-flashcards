@@ -11,7 +11,7 @@ _Created for [Harry Mack][harry-mack]._
 
 <p align="center">
     <a href="https://freestyle-flashcards.vercel.app">
-        <img alt="harry mack" src="./public/harry-mack.png" width="300">
+        <img alt="harry mack" src="./public/harry-mack.png" width="300" style="background: black">
     </a>
 </p>
 
