@@ -5,8 +5,14 @@ import {render, screen} from "test-utils/render"
 
 import {unsplashUTM} from "./Flashcard"
 
-// eslint-disable-next-line @next/next/no-img-element, react/display-name
-jest.mock("next/image", () => ({src, alt}) => <img src={src} alt={alt} />)
+jest.mock(
+    "next/image",
+    () =>
+        function Image({src, alt}) {
+            // eslint-disable-next-line @next/next/no-img-element
+            return <img src={src} alt={alt} />
+        },
+)
 
 describe("flashcard", () => {
     let onNextMock

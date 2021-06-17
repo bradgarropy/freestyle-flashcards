@@ -9,4 +9,24 @@ const mockImage: UnsplashImage = {
     profile: "https://unsplash.com/@harrymack",
 }
 
-export {mockImage, mockWord}
+const mockMeta = {
+    title: "freestyle flashcards",
+}
+
+const mockFacebook = {
+    url: "https://freestyle-flashcards.vercel.app",
+    type: "website",
+    title: "freestyle flashcards",
+    description: "🎤 freestyle flashcards",
+    image: "https://freestyle-flashcards.vercel.app/facebook.png",
+}
+
+const mockTwitter = {
+    card: "summary",
+    site: "@bradgarropy",
+    title: "freestyle flashcards",
+    description: "🎤 freestyle flashcards",
+    image: "https://freestyle-flashcards.vercel.app/twitter.png",
+}
+
+export {mockFacebook, mockImage, mockMeta, mockTwitter, mockWord}
