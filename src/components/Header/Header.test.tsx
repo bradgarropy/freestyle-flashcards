@@ -3,5 +3,10 @@ import {render, screen} from "test-utils/render"
 
 test("shows header", () => {
     render(<Header />)
-    expect(screen.getByAltText("harry mack logo"))
+
+    const logo = screen.getByAltText("harry mack logo")
+    const link = logo.parentElement.parentElement
+
+    expect(logo)
+    expect(link).toHaveAttribute("href", "https://harrymackofficial.com")
 })
