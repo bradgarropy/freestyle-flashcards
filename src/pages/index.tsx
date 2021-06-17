@@ -27,7 +27,7 @@ const IndexPage: FC = () => {
 
     return (
         <Layout>
-            <Meta title="next starter" />
+            <Meta title="FREESTYLE FLASHCARDS" />
             <Facebook />
             <Twitter />
 
