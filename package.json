@@ -7,7 +7,6 @@
         "react",
         "eslint",
         "prettier",
-        "styled-components",
         "jest",
         "vercel",
         "nextjs",
