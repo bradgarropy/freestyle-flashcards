@@ -1,4 +1,5 @@
 import {getImage} from "api/unsplash"
+import BuiltBy from "components/BuiltBy"
 import Facebook from "components/Facebook"
 import Flashcard from "components/Flashcard"
 import Layout from "components/Layout"
@@ -32,6 +33,7 @@ const IndexPage: FC = () => {
             <Twitter />
 
             <Flashcard image={image} word={word} onNext={onNext} />
+            <BuiltBy />
         </Layout>
     )
 }

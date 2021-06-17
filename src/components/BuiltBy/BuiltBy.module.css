@@ -1,0 +1,20 @@
+.built {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 0.5rem;
+    align-items: start;
+    color: var(--white);
+    fill: var(--white);
+    margin-top: 1rem;
+}
+
+.text {
+    font-size: 1.2rem;
+    line-height: 1;
+    margin: 0rem;
+    font-family: "Staatliches", cursive;
+}
+
+.logo {
+    width: 20px;
+}

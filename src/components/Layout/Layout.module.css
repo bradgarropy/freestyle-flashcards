@@ -1,0 +1,8 @@
+.layout {
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+    grid-template-rows: repeat(3, auto);
+}
