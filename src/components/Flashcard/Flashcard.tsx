@@ -60,3 +60,4 @@ const Flashcard: FC<FlashcardProps> = ({image, word, onNext}) => {
 }
 
 export default Flashcard
+export {unsplashUTM}

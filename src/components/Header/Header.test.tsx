@@ -3,6 +3,5 @@ import {render, screen} from "test-utils/render"
 
 test("shows header", () => {
     render(<Header />)
-    expect(screen.getByText("Home"))
-    expect(screen.getByText("About"))
+    expect(screen.getByAltText("harry mack logo"))
 })

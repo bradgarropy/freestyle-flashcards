@@ -8,8 +8,6 @@ test("shows layout", () => {
         </Layout>,
     )
 
-    expect(screen.getByText("Home"))
-    expect(screen.getByText("About"))
+    expect(screen.getByAltText("harry mack logo"))
     expect(screen.getByText("Testing"))
-    expect(screen.getByText("Footer"))
 })
