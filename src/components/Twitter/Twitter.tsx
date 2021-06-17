@@ -12,9 +12,9 @@ type TwitterProps = {
 const Twitter: FC<TwitterProps> = ({
     card = "summary",
     site = "@bradgarropy",
-    title = "next starter",
-    description = "⏭ next.js starter",
-    image = "https://next-starter.bradgarropy.vercel.app/twitter.png",
+    title = "freestyle flashcards",
+    description = "🎤 freestyle flashcards",
+    image = "https://freestyle-flashcards.vercel.app/twitter.png",
 }) => {
     return (
         <Head>

@@ -10,11 +10,11 @@ type FacebookProps = {
 }
 
 const Facebook: FC<FacebookProps> = ({
-    url = "https://next-starter.bradgarropy.vercel.app",
+    url = "https://freestyle-flashcards.vercel.app",
     type = "website",
-    title = "next starter",
-    description = "⏭ next.js starter",
-    image = "https://next-starter.bradgarropy.vercel.app/facebook.png",
+    title = "freestyle flashcards",
+    description = "🎤 freestyle flashcards",
+    image = "https://freestyle-flashcards.vercel.app/facebook.png",
 }) => {
     return (
         <Head>
