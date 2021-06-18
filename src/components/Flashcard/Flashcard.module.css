@@ -1,16 +1,22 @@
+.wrapper {
+    width: min(100%, 400px);
+    aspect-ratio: 9/16;
+    border-radius: 1rem;
+    border: 0.5rem solid var(--white);
+    box-sizing: border-box;
+}
+
 .flashcard {
+    height: 100%;
     display: grid;
     box-sizing: border-box;
     grid-template-columns: 1fr;
     grid-template-rows: 50fr auto 50fr auto;
     justify-items: center;
     overflow: hidden;
-    width: min(100%, 400px);
-    aspect-ratio: 9/16;
     background-color: var(--white);
-    border-radius: 1rem;
-    box-shadow: 0 0 0 0.5rem var(--black), 0 0 0 1rem var(--white);
-    margin: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5rem solid var(--black);
 }
 
 .image {

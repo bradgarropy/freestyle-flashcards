@@ -20,41 +20,43 @@ const Flashcard: FC<FlashcardProps> = ({image, word, onNext}) => {
     }, [])
 
     return (
-        <div className={styles.flashcard}>
-            {image ? (
-                <div className={styles.imageWrapper}>
-                    <Image
-                        src={image.image}
-                        alt={image.description}
-                        layout="fill"
-                        objectFit="cover"
-                    />
-                </div>
-            ) : (
-                <div className={styles.placeholder} />
-            )}
+        <div className={styles.wrapper}>
+            <div className={styles.flashcard}>
+                {image ? (
+                    <div className={styles.imageWrapper}>
+                        <Image
+                            src={image.image}
+                            alt={image.description}
+                            layout="fill"
+                            objectFit="cover"
+                        />
+                    </div>
+                ) : (
+                    <div className={styles.placeholder} />
+                )}
 
-            <p style={{visibility: image ? "visible" : "hidden"}}>
-                Photo by{" "}
-                <a
-                    href={`${image?.profile}?${unsplashUTM}`}
-                    className={styles.link}
-                >
-                    {image?.user}
-                </a>{" "}
-                on{" "}
-                <a
-                    href={`https://unsplash.com?${unsplashUTM}`}
-                    className={styles.link}
-                >
-                    Unsplash
-                </a>
-                .
-            </p>
+                <p style={{visibility: image ? "visible" : "hidden"}}>
+                    Photo by{" "}
+                    <a
+                        href={`${image?.profile}?${unsplashUTM}`}
+                        className={styles.link}
+                    >
+                        {image?.user}
+                    </a>{" "}
+                    on{" "}
+                    <a
+                        href={`https://unsplash.com?${unsplashUTM}`}
+                        className={styles.link}
+                    >
+                        Unsplash
+                    </a>
+                    .
+                </p>
 
-            <p className={styles.word}>{word}</p>
+                <p className={styles.word}>{word}</p>
 
-            <button className={styles.next}>tap for another word</button>
+                <button className={styles.next}>tap for another word</button>
+            </div>
         </div>
     )
 }
