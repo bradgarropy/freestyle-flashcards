@@ -35,7 +35,10 @@ const Flashcard: FC<FlashcardProps> = ({image, word, onNext}) => {
                     <div className={styles.placeholder} />
                 )}
 
-                <p style={{visibility: image ? "visible" : "hidden"}}>
+                <p
+                    className={styles.credit}
+                    style={{visibility: image ? "visible" : "hidden"}}
+                >
                     Photo by{" "}
                     <a
                         href={`${image?.profile}?${unsplashUTM}`}
