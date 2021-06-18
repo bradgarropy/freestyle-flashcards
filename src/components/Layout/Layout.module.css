@@ -1,8 +1,10 @@
 .layout {
+    box-sizing: border-box;
     height: 100vh;
     display: grid;
     justify-content: center;
     justify-items: center;
     align-content: start;
     grid-template-rows: repeat(3, auto);
+    padding: 0rem 2rem 2rem 2rem;
 }
