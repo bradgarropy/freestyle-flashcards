@@ -1,24 +1,24 @@
+import Link from "@bradgarropy/next-link"
 import Image from "next/image"
-import Link from "next/link"
-import {FC} from "react"
+import {FC, MouseEventHandler} from "react"
 
 import styles from "./Header.module.css"
 
 const Header: FC = () => {
+    const onClick: MouseEventHandler<HTMLAnchorElement> = event => {
+        event.stopPropagation()
+    }
+
     return (
         <header className={styles.header}>
-            <a
-                href="https://harrymackofficial.com"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <Link to="https://harrymackofficial.com" onClick={onClick}>
                 <Image
                     src="/harry-mack.png"
                     alt="harry mack logo"
                     width={1500}
                     height={750}
                 />
-            </a>
+            </Link>
         </header>
     )
 }

@@ -1,6 +1,6 @@
 {
     "name": "freestyle-flashcards",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "🎤 freestyle flashcards",
     "keywords": [
         "typescript",
@@ -44,8 +44,9 @@
         "new": "plop"
     },
     "dependencies": {
+        "@bradgarropy/next-link": "^1.0.1",
         "flickr-sdk": "^3.10.0",
-        "next": "^11.0.0",
+        "next": "^11.0.1",
         "random-words": "^1.1.1",
         "react-dom": "^17.0.1",
         "unsplash-js": "^7.0.11"
@@ -59,24 +60,24 @@
         "@testing-library/user-event": "^13.1.9",
         "@types/jest": "^26.0.23",
         "@types/react": "^17.0.11",
-        "@typescript-eslint/eslint-plugin": "^4.26.1",
-        "@typescript-eslint/parser": "^4.26.1",
+        "@typescript-eslint/eslint-plugin": "^4.28.0",
+        "@typescript-eslint/parser": "^4.28.0",
         "all-contributors-cli": "^6.20.0",
         "babel-eslint": "^10.1.0",
         "dotenv": "^10.0.0",
-        "eslint": "^7.16.0",
-        "eslint-config-next": "^11.0.0",
+        "eslint": "^7.29.0",
+        "eslint-config-next": "^11.0.1",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.2.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
         "identity-obj-proxy": "^3.0.0",
-        "jest": "^27.0.4",
+        "jest": "^27.0.5",
         "plop": "^2.7.4",
         "prettier": "^2.3.1",
         "react": "^17.0.1",
         "regenerator-runtime": "^0.13.7",
-        "typescript": "^4.3.2"
+        "typescript": "^4.3.4"
     }
 }

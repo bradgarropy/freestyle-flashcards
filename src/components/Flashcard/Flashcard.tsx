@@ -1,6 +1,7 @@
+import Link from "@bradgarropy/next-link"
 import Image from "next/image"
 import {UnsplashImage} from "pages/api/unsplash"
-import {FC, useEffect} from "react"
+import {FC, MouseEventHandler, useEffect} from "react"
 
 import styles from "./Flashcard.module.css"
 
@@ -18,6 +19,10 @@ const Flashcard: FC<FlashcardProps> = ({image, word, onNext}) => {
         return window.removeEventListener("click", onNext)
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
+
+    const onClick: MouseEventHandler<HTMLAnchorElement> = event => {
+        event.stopPropagation()
+    }
 
     return (
         <div className={styles.wrapper}>
@@ -40,19 +45,21 @@ const Flashcard: FC<FlashcardProps> = ({image, word, onNext}) => {
                     style={{visibility: image ? "visible" : "hidden"}}
                 >
                     Photo by{" "}
-                    <a
-                        href={`${image?.profile}?${unsplashUTM}`}
+                    <Link
+                        to={`${image?.profile}?${unsplashUTM}`}
                         className={styles.link}
+                        onClick={onClick}
                     >
                         {image?.user}
-                    </a>{" "}
+                    </Link>{" "}
                     on{" "}
-                    <a
-                        href={`https://unsplash.com?${unsplashUTM}`}
+                    <Link
+                        to={`https://unsplash.com?${unsplashUTM}`}
                         className={styles.link}
+                        onClick={onClick}
                     >
                         Unsplash
-                    </a>
+                    </Link>
                     .
                 </p>
 
