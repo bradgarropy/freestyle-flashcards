@@ -1,10 +1,8 @@
+import SEO from "@bradgarropy/next-seo"
 import {getImage} from "api/unsplash"
 import BuiltBy from "components/BuiltBy"
-import Facebook from "components/Facebook"
 import Flashcard from "components/Flashcard"
 import Layout from "components/Layout"
-import Meta from "components/Meta"
-import Twitter from "components/Twitter"
 import randomWords from "random-words"
 import {FC, useEffect, useState} from "react"
 
@@ -28,10 +26,7 @@ const IndexPage: FC = () => {
 
     return (
         <Layout>
-            <Meta title="FREESTYLE FLASHCARDS" />
-            <Facebook />
-            <Twitter />
-
+            <SEO title="FREESTYLE FLASHCARDS" />
             <Flashcard image={image} word={word} onNext={onNext} />
             <BuiltBy />
         </Layout>
