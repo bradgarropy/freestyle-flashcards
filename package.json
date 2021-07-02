@@ -45,7 +45,7 @@
     },
     "dependencies": {
         "@bradgarropy/next-link": "^1.0.2",
-        "@bradgarropy/next-seo": "0.0.5",
+        "@bradgarropy/next-seo": "^1.0.0",
         "flickr-sdk": "^3.10.0",
         "next": "^11.0.1",
         "random-words": "^1.1.1",
